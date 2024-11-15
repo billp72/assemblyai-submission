@@ -2,7 +2,6 @@ const http = require('http');
 const fs = require('fs');
 require('dotenv').config();
 
-const hostname = process.env.hostname || 'https://fierce-everglades-96194-97a0bfd171b5.herokuapp.com/';
 const port = process.env.PORT;
 const home = fs.readFileSync('index.html')
 const mod = fs.readFileSync('bundle.js/main.js')
@@ -34,6 +33,6 @@ const server = http.createServer((req, res)=>{
     }
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, () => {
+    console.log(`Server running at ${port}`);
 });
