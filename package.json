@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS"
+  },
+  "dependencies": {
+    "assemblyai": "^4.8.0",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "node-fetch": "^3.3.2",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "webpack": "^5.96.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "webpack-cli": "^5.1.4"
+  }
+}

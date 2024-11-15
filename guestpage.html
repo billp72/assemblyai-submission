@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+             .loader {
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #3498db;
+                width: 120px;
+                height: 120px;
+                -webkit-animation: spin 2s linear infinite; /* Safari */
+                animation: spin 2s linear infinite;
+             }
+                
+                /* Safari */
+             @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+             }
+                
+             @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+             }
+          </style>
+        <title>Guest Page</title>
+    </head>
+    <body>
+
+        <header>
+            <div>
+                <div style="float:left;">
+                    <h1 style="margin:0 !important;">Guest Page</h1>
+                    <h5 style="color:gray;margin: 0 0 10px 5px;">paragraph: <span id="subtitle"></span></h5>
+                </div>
+                <a href="http://localhost:3000" style="font-size:20px;float:right;margin-right:20px;">Back</a>
+            </div>
+            
+        </header>
+        <main style="height:500px;width:98%;overflow-y:auto;overflow-x:hidden;border:1px solid #ccc;padding:10px;font:16px/26px Georgia, Garamond, Serif;">
+            <div id="host" style="width:100%;margin: 0 0 20px 0;"></div>
+            <div id="guest" style="width:100%;"></div>
+            <div style="margin: 10% 50% auto 45%;width:100%;">
+                <div class="loader" id="load2"></div>
+            </div> 
+        </main>
+        
+        <script type="module" src="bundle.js/main.js"></script>
+    </body>
+</html>
