@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+require('dotenv').config();
 
 const hostname = process.env.hostname || 'https://fierce-everglades-96194-97a0bfd171b5.herokuapp.com/';
 const port = process.env.PORT;
