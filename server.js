@@ -5,7 +5,7 @@ const hostname = '127.0.0.1';
 const port = 3000;
 const home = fs.readFileSync('index.html')
 const mod = fs.readFileSync('bundle.js/main.js')
-const guestpage = fs.readFileSync('guestpage.html')
+const focuspage = fs.readFileSync('focuspage.html')
 //const contact = fs.readFileSync('./contact.html')*/
 const server = http.createServer((req, res)=>{
     url = req.url;
@@ -15,9 +15,9 @@ const server = http.createServer((req, res)=>{
         res.setHeader('Content-Type', 'text/html');
         res.end(home);
     }
-    else if(path == '/guestpage'){
+    else if(path == '/focuspage'){
         res.setHeader('Content-Type', 'text/html');
-        res.end(guestpage);
+        res.end(focuspage);
     }
     else if(url == '/bundle.js/main.js'){
         res.setHeader('Content-Type', 'text/javascript');
