@@ -4,9 +4,10 @@ require('dotenv').config();
 
 const port = process.env.PORT;
 const home = fs.readFileSync('index.html')
-const mod = fs.readFileSync('bundle.js/main.js')
+const mod1 = fs.readFileSync('bundle/bundle1.bundle.js')
+const mod2 = fs.readFileSync('bundle/bundle2.bundle.js')
 const focuspage = fs.readFileSync('focuspage.html')
-//const contact = fs.readFileSync('./contact.html')*/
+
 const server = http.createServer((req, res)=>{
     url = req.url;
     path = req.url.split('?')[0]
@@ -19,14 +20,16 @@ const server = http.createServer((req, res)=>{
         res.setHeader('Content-Type', 'text/html');
         res.end(focuspage);
     }
-    else if(url == '/bundle.js/main.js'){
+    else if(url == '/bundle/bundle1.bundle.js'){
         res.setHeader('Content-Type', 'text/javascript');
-        res.write(mod);
+        res.write(mod1);
         res.end();
     }
-    /*else if(url == '/contact'){
-        res.end(contact);
-    }*/
+    else if(url == '/bundle/bundle1.bundle.js'){
+        res.setHeader('Content-Type', 'text/javascript');
+        res.write(mod2);
+        res.end();
+    }
     else{
         res.statusCode = 404;
         res.end("<h1>404 not found</h1>");
