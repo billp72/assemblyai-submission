@@ -6,6 +6,10 @@
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <style>
+             .outterLoader {
+                margin: 10% 50% auto 45%;
+                width:100%;
+             }
              .loader {
                 border: 16px solid #f3f3f3;
                 border-radius: 50%;
@@ -35,13 +39,9 @@
             <h1 style="margin:0 !important;">Wildfire Report</h1>
             <h5 style="color:gray;margin: 0 0 10px 5px;">transcribed from audio</h5>
         </header>
-        <main id="text" style="height:500px;width:98%;overflow-y:auto;overflow-x:hidden;border:1px solid #ccc;padding:10px;font:16px/26px Georgia, Garamond, Serif;">
-
-            <div style="margin: 10% 50% auto 45%;width:100%;">
-                <div class="loader" id="load"></div>
-            </div>
+        <main id="text" style="height:500px;width:98%;overflow-y:hidden;overflow-x:hidden;border:1px solid #ccc;padding:10px;font:16px/26px Georgia, Garamond, Serif;">
         </main>
-        
+        <div id="btn" style="margin-top: 20px;"></div>
         <script type="module" src="bundle.js/main.js"></script>
     </body>
 </html>
