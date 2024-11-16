@@ -25,7 +25,7 @@ const server = http.createServer((req, res)=>{
         res.write(mod1);
         res.end();
     }
-    else if(url == '/bundle/bundle1.bundle.js'){
+    else if(url == '/bundle/bundle2.bundle.js'){
         res.setHeader('Content-Type', 'text/javascript');
         res.write(mod2);
         res.end();
