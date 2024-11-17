@@ -49,6 +49,8 @@ module2.ts
 # TypeScript cache
 *.tsbuildinfo
 
+unused/
+
 # Optional npm cache directory
 .npm
 
