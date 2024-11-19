@@ -29,6 +29,20 @@
                 padding:10px;
                 font:16px/26px Georgia, Garamond, Serif;
              }
+
+             @media only screen and (max-width: 600px){
+	                /*Big smartphones [426px -> 600px]*/
+                .conversation {
+                    overflow-y:auto; 
+                }
+             }
+
+             @media only screen and (max-width: 425px){
+	            /*Small smartphones [325px -> 425px]*/
+                .conversation {
+                    overflow-y:auto; 
+                }
+            }
                 
                 /* Safari */
              @-webkit-keyframes spin {
