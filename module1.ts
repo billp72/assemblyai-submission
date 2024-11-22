@@ -4,7 +4,7 @@
 import { AssemblyAI } from 'assemblyai';
 //import { SoxRecording } from './sox.js'
 const client = new AssemblyAI({
-  apiKey: '6410a0f10abd474d9c98d6e2b0439e99',
+  apiKey: '',
 });
 
 const FILE_URL =
